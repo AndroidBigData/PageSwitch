@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mengzhao.pageswitch.MainActivity"
+    android:orientation="vertical">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_content"/>
+
+    <RadioGroup
+        android:id="@+id/rg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/buynew"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/buynew_selector"
+            android:text="第一页"/>
+        <RadioButton
+            android:id="@+id/save"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/save_selector"
+            android:text="第二页" />
+
+        <RadioButton
+            android:id="@+id/mine"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/mine_selector"
+            android:text="第三页" />
+
+        <RadioButton
+            android:id="@+id/chat"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/chat_selector"
+            android:text="第四页" />
+    </RadioGroup>
+</RelativeLayout>
